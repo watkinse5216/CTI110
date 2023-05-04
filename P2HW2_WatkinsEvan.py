@@ -19,15 +19,15 @@ print("------------Results------------")
 #List of Grades
 grades = [mod_1, mod_2, mod_3, mod_4, mod_5, mod_6]
 #Grade Sum
-sum_grades =mod_1 + mod_2 + mod_3 + mod_4 + mod_5 + mod_6
+sum = sum(grades)
 #Finding the Average of Grades
-results = sum_grades / 6
+results = sum / len(grades)
 #Finding the Highest Grade
 highest = max(grades)
 #Finding the Lowest Grade
 lowest = min(grades)
 print('Lowest Grade', format(lowest, ',.1f'))
 print('Highest Grade', format(highest, ',.1f'))
-print('Sum of Grades:', format(sum_grades, ',.1f'))
+print('Sum of Grades:', format(sum, ',.1f'))
 print('Average:', format(results, ',.2f'))
 print('----------------------------------------')
